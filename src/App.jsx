@@ -1,16 +1,11 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import About from './components/About';
 import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ContactForm from './components/ContactForm';
 
 const App = () => {
   return (
     <>
-      {/* Barra de navegación */}
-      <Navbar />
-
       {/* Sección Sobre Mí */}
       <About />
 
@@ -18,7 +13,7 @@ const App = () => {
       <Portfolio />
 
       {/* Contacto */}
-      <Contact />
+      <ContactForm />
 
       {/* Pie de página */}
       <Footer />
