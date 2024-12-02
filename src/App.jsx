@@ -1,23 +1,20 @@
-import React from 'react';
-import Header from './components/HeaderPage'; // Ruta relativa correcta
-import About from './components/AboutMe';
-import PortfolioPage from './components/PortfolioPage';
-import ContactForm from './components/ContactForm';
-import FooterPage from './components/FooterPage';
-import './App.css';
+import React from "react";
+import AboutMe from "./components/AboutMe";
+import ContactForm from "./components/ContactForm";
+import FooterPage from "./components/FooterPage";
+import HeaderPage from "./components/HeaderPage";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Header />
-      <main>
-        <About />
-        <PortfolioPage />
-        <ContactForm />
-      </main>
+    <div>
+      <h1>Bienvenido a mi página</h1>
+      <AboutMe />
+      <ContactForm />
       <FooterPage />
+      <HeaderPage />
     </div>
   );
-}
+};
 
 export default App;

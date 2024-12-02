@@ -1,0 +1,90 @@
+/* styles/Footer.css */
+
+/* Estilos generales para el pie de página */
+#footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-text {
+    font-size: 1.1em;
+    margin: 10px 0;
+  }
+  
+  .social-links {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espacio entre los iconos */
+  }
+  
+  .social-links a {
+    transition: transform 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    transform: scale(1.1); /* Efecto de hover */
+  }
+  
+  .social-links img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  footer p {
+    font-size: 0.9em;
+    color: #bbb;
+    margin-top: 20px;
+  }
+  
+  /* Estilos para pantallas pequeñas (móviles) */
+  @media (max-width: 600px) {
+    .footer-text {
+      font-size: 1em;
+    }
+  
+    .social-links {
+      gap: 10px; /* Reduce el espacio entre los iconos */
+    }
+  
+    .social-links img {
+      width: 35px;
+      height: 35px;
+    }
+  
+    footer p {
+      font-size: 0.8em;
+    }
+  }
+  
+  /* Estilos para pantallas medianas (tablets) */
+  @media (max-width: 1024px) {
+    .footer-text {
+      font-size: 1.05em;
+    }
+  
+    .social-links {
+      gap: 12px;
+    }
+  
+    .social-links img {
+      width: 38px;
+      height: 38px;
+    }
+  
+    footer p {
+      font-size: 0.85em;
+    }
+  }
+  
