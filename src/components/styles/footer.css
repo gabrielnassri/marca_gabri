@@ -1,6 +1,5 @@
 /* styles/Footer.css */
 
-/* Estilos generales para el pie de página */
 #footer {
     background-color: #333;
     color: white;
@@ -26,7 +25,7 @@
     margin: 20px 0;
     display: flex;
     justify-content: center;
-    gap: 15px; /* Espacio entre los iconos */
+    gap: 15px;
   }
   
   .social-links a {
@@ -34,7 +33,7 @@
   }
   
   .social-links a:hover {
-    transform: scale(1.1); /* Efecto de hover */
+    transform: scale(1.1); 
   }
   
   .social-links img {
@@ -48,14 +47,13 @@
     margin-top: 20px;
   }
   
-  /* Estilos para pantallas pequeñas (móviles) */
   @media (max-width: 600px) {
     .footer-text {
       font-size: 1em;
     }
   
     .social-links {
-      gap: 10px; /* Reduce el espacio entre los iconos */
+      gap: 10px;
     }
   
     .social-links img {
@@ -68,7 +66,6 @@
     }
   }
   
-  /* Estilos para pantallas medianas (tablets) */
   @media (max-width: 1024px) {
     .footer-text {
       font-size: 1.05em;
