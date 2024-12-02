@@ -4,7 +4,7 @@ import './styles/contact.css';
 function ContactForm() {
   const form = useRef();
 
-const Contact = () => {
+const ContactForm = () => {
   return (
     <section id="contact">
       <h1>Contáctame</h1>

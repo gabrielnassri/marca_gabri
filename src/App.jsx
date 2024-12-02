@@ -1,24 +1,23 @@
 import React from 'react';
-import Portfolio from './components/Portfolio';
-import Footer from './components/Footer';
+import Header from './components/HeaderPage'; // Ruta relativa correcta
+import About from './components/AboutMe';
+import PortfolioPage from './components/PortfolioPage';
 import ContactForm from './components/ContactForm';
+import FooterPage from './components/FooterPage';
+import './App.css';
 
-const App = () => {
+function App() {
   return (
-    <>
-      {/* Sección Sobre Mí */}
-      <About />
-
-      {/* Portafolio */}
-      <Portfolio />
-
-      {/* Contacto */}
-      <ContactForm />
-
-      {/* Pie de página */}
-      <Footer />
-    </>
+    <div className="App">
+      <Header />
+      <main>
+        <About />
+        <PortfolioPage />
+        <ContactForm />
+      </main>
+      <FooterPage />
+    </div>
   );
-};
+}
 
 export default App;
