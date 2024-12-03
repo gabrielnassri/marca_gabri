@@ -2,7 +2,7 @@
   "name": "marca_gabri",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jcestefania.github.io/marca_gabri",
+  "homepage": "https://gabrielnassri.github.io/marca_gabri/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
