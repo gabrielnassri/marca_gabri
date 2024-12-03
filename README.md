@@ -1,4 +1,3 @@
-```markdown
 # Portfolio Personal
 
 ## Descripción
@@ -34,53 +33,3 @@ Este es un proyecto de desarrollo frontend para crear una **marca personal** que
 
    ```bash
    git clone https://github.com/gabrielnassri/portfolio.git
-   ```
-
-2. Instalar dependencias:
-
-   Si estás utilizando React, puedes instalar las dependencias necesarias con:
-
-   ```bash
-   npm install
-   ```
-
-3. Para iniciar el proyecto localmente:
-
-   ```bash
-   npm start
-   ```
-
-   Esto abrirá la aplicación en tu navegador.
-
-## Contribuciones
-
-Este proyecto está abierto a contribuciones. Si encuentras algún error o tienes sugerencias para mejoras, por favor abre un **issue** o crea un **pull request**.
-
-## Licencia
-
-Este proyecto está bajo la **MIT License**. Consulta el archivo [LICENSE](./LICENSE) para más detalles.
-```
-
-### Instrucciones para commit:
-
-1. **Guardar el archivo**: Guarda el archivo `README.md` en la raíz de tu proyecto.
-2. **Realizar commit**:
-
-   - Abre tu terminal en la carpeta de tu proyecto.
-   - Agrega el archivo al área de staging:
-
-     ```bash
-     git add README.md
-     ```
-
-   - Realiza el commit:
-
-     ```bash
-     git commit -m "Añadido README con descripción del proyecto"
-     ```
-
-   - Realiza el push a GitHub (si ya has configurado tu repositorio remoto):
-
-     ```bash
-     git push
-     ```
