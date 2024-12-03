@@ -16,9 +16,9 @@ Este es un proyecto de desarrollo frontend para crear una **marca personal** que
 
 ## Enlaces
 
-- **Código fuente en GitHub**: [GitHub Repository](https://github.com/gabrielnassri/portfolio)
-- **Página web publicada**: [GitHub Pages](https://gabrielnassri.github.io/portfolio)
-- **Perfil de LinkedIn**: [LinkedIn](https://www.linkedin.com/in/gabrielnassri)
+- **Código fuente en GitHub**: [GitHub Repository](https://github.com/gabrielnassri/marca_gabri)
+- **Página web publicada**: [GitHub Pages](https://gabrielnassri.github.io/marca_gabri/)
+- **Perfil de LinkedIn**: [LinkedIn](https://www.linkedin.com/in/gabriel-nassri-a27416280/)
 
 ## Características
 - **Página de inicio** con enlaces de navegación hacia las secciones de Portfolio, Habilidades y Contacto.
@@ -30,56 +30,50 @@ Este es un proyecto de desarrollo frontend para crear una **marca personal** que
 ## Instalación
 
 1. Clonar el repositorio:
-
    ```bash
    git clone https://github.com/gabrielnassri/portfolio.git
+   Instala las dependencias:
    ```
-
-2. Instalar dependencias:
-
-   Si estás utilizando React, puedes instalar las dependencias necesarias con:
-
    ```bash
    npm install
+   Ejecuta la aplicación:
    ```
-
-3. Para iniciar el proyecto localmente:
-
+   
    ```bash
    npm start
+   Accede a la aplicación en tu navegador en http://localhost:3000.
    ```
+🛠 Configuración de EmailJS
+Regístrate en EmailJS y crea un nuevo servicio y plantilla.
+Configura las claves serviceID y templateID en el archivo ContactForm.jsx.
+🌐 Despliegue
+El proyecto está alojado en GitHub Pages. Para desplegar:
 
-   Esto abrirá la aplicación en tu navegador.
+Instala gh-pages:
 
-## Contribuciones
+``` bash
+npm install gh-pages --save-dev
+Configura el script de despliegue en el archivo package.json:
 
-Este proyecto está abierto a contribuciones. Si encuentras algún error o tienes sugerencias para mejoras, por favor abre un **issue** o crea un **pull request**.
-
-## Licencia
-
-Este proyecto está bajo la **MIT License**. Consulta el archivo [LICENSE](./LICENSE) para más detalles.
+json
+Copiar código
+"homepage": "https://tu-usuario.github.io/tu-repositorio",
+"scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+}
+Despliega la aplicación:
+```
+```bash
+npm run deploy
 ```
 
-### Instrucciones para commit:
+📌 Próximas mejoras
+Añadir animaciones más dinámicas.
 
-1. **Guardar el archivo**: Guarda el archivo `README.md` en la raíz de tu proyecto.
-2. **Realizar commit**:
+Mejorar la accesibilidad (WCAG).
 
-   - Abre tu terminal en la carpeta de tu proyecto.
-   - Agrega el archivo al área de staging:
+Agregar un sistema de blog.
 
-     ```bash
-     git add README.md
-     ```
-
-   - Realiza el commit:
-
-     ```bash
-     git commit -m "Añadido README con descripción del proyecto"
-     ```
-
-   - Realiza el push a GitHub (si ya has configurado tu repositorio remoto):
-
-     ```bash
-     git push
-     ```
+👨‍💻 Autor
+Creado con 💻  por Gabriel Nassri.
