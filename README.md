@@ -34,15 +34,15 @@ Este es un proyecto de desarrollo frontend para crear una **marca personal** que
    git clone https://github.com/gabrielnassri/portfolio.git
    Instala las dependencias:
    ```
-```bash
-npm install
-Ejecuta la aplicación:
-```
-
-```bash
-npm start
-Accede a la aplicación en tu navegador en http://localhost:3000.
-```
+   ```bash
+   npm install
+   Ejecuta la aplicación:
+   ```
+   
+   ```bash
+   npm start
+   Accede a la aplicación en tu navegador en http://localhost:3000.
+   ```
 🛠 Configuración de EmailJS
 Regístrate en EmailJS y crea un nuevo servicio y plantilla.
 Configura las claves serviceID y templateID en el archivo ContactForm.jsx.
@@ -70,7 +70,10 @@ npm run deploy
 
 📌 Próximas mejoras
 Añadir animaciones más dinámicas.
+
 Mejorar la accesibilidad (WCAG).
+
 Agregar un sistema de blog.
+
 👨‍💻 Autor
 Creado con 💻  por Gabriel Nassri.
