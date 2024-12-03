@@ -16,7 +16,7 @@ function ContactForm() {
         (response) => {
           alert("Mensaje enviado correctamente. ¡Gracias por contactarme!");
           console.log("SUCCESS!", response.status, response.text);
-          form.current.reset(); // Limpia el formulario
+          form.current.reset();
         },
         (error) => {
           alert("Error al enviar el mensaje. Intenta nuevamente.");

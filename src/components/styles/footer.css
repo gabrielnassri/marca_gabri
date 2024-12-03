@@ -1,6 +1,5 @@
 /* Footer.css */
 
-/* Estilo principal del footer */
 footer {
   background-color: #2e2e2e; /* Fondo oscuro */
   color: #f0f0f0; /* Texto en gris claro */
@@ -16,7 +15,6 @@ footer .footer-content {
   margin: 0 auto;
 }
 
-/* Estilo para los enlaces del footer */
 footer a {
   color: #2d57e1; /* Azul como los editores de código */
   text-decoration: none;
@@ -28,7 +26,6 @@ footer a:hover {
   color: #1fd0d6; /* Verde en hover */
 }
 
-/* Estilo para los iconos sociales */
 footer .social-icons {
   margin-top: 10px;
 }
@@ -46,7 +43,6 @@ footer .social-icons img:hover {
   filter: brightness(0) invert(0.7); /* Verde suave al hover */
 }
 
-/* Texto adicional */
 footer p {
   margin: 10px 0 0;
   font-size: 0.8rem;

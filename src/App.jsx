@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 
-// Importamos los componentes
 import HeaderPage from "./components/HeaderPage";
 import AboutMe from "./components/AboutMe";
 import PortfolioPage from "./components/PortfolioPage";

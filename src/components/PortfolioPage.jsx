@@ -40,7 +40,7 @@ const PortfolioPage = () => {
         ))}
       </div>
 
-      {/* Nueva sección para visitar GitHub */}
+      {}
       <div className="github-section">
         <h3>Visita mi GitHub</h3>
         <p>

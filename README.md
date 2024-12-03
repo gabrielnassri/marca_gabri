@@ -1,4 +1,3 @@
-```markdown
 # Portfolio Personal
 
 ## Descripción
