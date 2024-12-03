@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/marca_gabri/static/css/main.abdac766.css",
+    "main.js": "/marca_gabri/static/js/main.75c76e19.js",
+    "static/js/453.2e390f04.chunk.js": "/marca_gabri/static/js/453.2e390f04.chunk.js",
+    "static/media/foto_gabri.jpg": "/marca_gabri/static/media/foto_gabri.8a54ea3a64d9f678821c.jpg",
+    "static/media/linkedin.png": "/marca_gabri/static/media/linkedin.f249b38224ca41a0b909.png",
+    "index.html": "/marca_gabri/index.html",
+    "main.abdac766.css.map": "/marca_gabri/static/css/main.abdac766.css.map",
+    "main.75c76e19.js.map": "/marca_gabri/static/js/main.75c76e19.js.map",
+    "453.2e390f04.chunk.js.map": "/marca_gabri/static/js/453.2e390f04.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abdac766.css",
+    "static/js/main.75c76e19.js"
+  ]
+}
