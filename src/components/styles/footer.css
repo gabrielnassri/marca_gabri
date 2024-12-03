@@ -1,87 +1,52 @@
-/* styles/Footer.css */
+/* Footer.css */
 
-#footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .footer-text {
-    font-size: 1.1em;
-    margin: 10px 0;
-  }
-  
-  .social-links {
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
-  
-  .social-links a {
-    transition: transform 0.3s ease;
-  }
-  
-  .social-links a:hover {
-    transform: scale(1.1); 
-  }
-  
-  .social-links img {
-    width: 40px;
-    height: 40px;
-  }
-  
-  footer p {
-    font-size: 0.9em;
-    color: #bbb;
-    margin-top: 20px;
-  }
-  
-  @media (max-width: 600px) {
-    .footer-text {
-      font-size: 1em;
-    }
-  
-    .social-links {
-      gap: 10px;
-    }
-  
-    .social-links img {
-      width: 35px;
-      height: 35px;
-    }
-  
-    footer p {
-      font-size: 0.8em;
-    }
-  }
-  
-  @media (max-width: 1024px) {
-    .footer-text {
-      font-size: 1.05em;
-    }
-  
-    .social-links {
-      gap: 12px;
-    }
-  
-    .social-links img {
-      width: 38px;
-      height: 38px;
-    }
-  
-    footer p {
-      font-size: 0.85em;
-    }
-  }
-  
+/* Estilo principal del footer */
+footer {
+  background-color: #282c34;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 2px solid #444;
+}
+
+/* Estilo para el contenedor de contenido del footer */
+footer .footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Estilo para los enlaces del footer */
+footer a {
+  color: #61dafb;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+/* Estilo para los iconos sociales */
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons img {
+  width: 24px;
+  height: 24px;
+  margin: 0 5px;
+  transition: transform 0.3s ease;
+}
+
+footer .social-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Texto adicional */
+footer p {
+  margin: 10px 0 0;
+  font-size: 0.8rem;
+  color: #aaaaaa;
+}

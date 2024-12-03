@@ -1,48 +1,93 @@
-/* Footer.css */
 
-footer {
-    background-color: #282c34;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 0.9rem;
-    border-top: 2px solid #444;
-  }
 
-  footer .footer-content {
-    max-width: 900px;
-    margin: 0 auto;
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px 30px;
+    color: white;
   }
   
-  footer a {
-    color: #61dafb;
+  #header .logo h1 {
+    font-size: 1.8em;
+    margin: 0;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0;
+  }
+  
+  .nav-links a {
+    color: white;
     text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s ease;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
   }
   
-  footer a:hover {
-    color: #ffffff;
+  .nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
   }
   
-  footer .social-icons {
-    margin-top: 10px;
+  /* Estilos para el menú en pantallas pequeñas (responsivo) */
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
   }
   
-  footer .social-icons img {
-    width: 24px;
-    height: 24px;
-    margin: 0 5px;
-    transition: transform 0.3s ease;
+  .menu-toggle .bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: transform 0.3s ease, opacity 0.3s ease;
   }
   
-  footer .social-icons img:hover {
-    transform: scale(1.2);
+  .nav-links.active {
+    display: block;
+    position: absolute;
+    top: 70px; /* Coloca el menú debajo del header */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+    box-sizing: border-box;
   }
-
-  footer p {
-    margin: 10px 0 0;
-    font-size: 0.8rem;
-    color: #aaaaaa;
+  
+  .nav-links.active ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-links.active a {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  /* Media query para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
   }
   
