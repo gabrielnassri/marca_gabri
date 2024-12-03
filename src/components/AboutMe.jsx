@@ -39,7 +39,7 @@ function AboutMe() {
         </h3>
         <p>
           <a
-            href="www.linkedin.com/in/gabriel-nassri-a27416280"
+            href="https://www.linkedin.com/in/gabriel-nassri-a27416280/"
             target="_blank"
             rel="noopener noreferrer"
           >
