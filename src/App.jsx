@@ -7,6 +7,7 @@ import AboutMe from "./components/AboutMe";
 import PortfolioPage from "./components/PortfolioPage";
 import ContactForm from "./components/ContactForm";
 import FooterPage from "./components/FooterPage";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
       {/* Sección de Proyectos / Portfolio */}
       <section id="portfolio">
         <PortfolioPage />
+      </section>
+
+      <section id="skills">
+        <Skills />
       </section>
 
       {/* Sección de contacto */}

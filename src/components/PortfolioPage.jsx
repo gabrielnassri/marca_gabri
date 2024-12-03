@@ -23,7 +23,7 @@ const projects = [
 const PortfolioPage = () => {
     return (
       <section id="portfolio">
-        <h2>🛠️ Mi Portafolio</h2>
+        <h2>Mis Proyectos</h2>
         <div className="portfolio-container">
           {projects.map((project) => (
             <div key={project.id} className="portfolio-card">
@@ -35,7 +35,7 @@ const PortfolioPage = () => {
                 rel="noopener noreferrer"
                 className="portfolio-link"
               >
-                Ver proyecto
+                Accede a mis proyectos
               </a>
             </div>
           ))}
