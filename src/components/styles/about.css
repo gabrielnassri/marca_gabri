@@ -1,126 +1,150 @@
-section#sobre-mi {
-  background: #fff;
-  margin: 30px auto;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  max-width: 900px;
+/* Estilos generales para la sección "Sobre mí" */
+#sobre-mi {
+  background-color: #2e2e2e; /* Fondo oscuro */
+  color: #f0f0f0; /* Texto en gris claro */
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+  font-family: 'Courier New', Courier, monospace; /* Tipografía monoespaciada */
+}
+
+/* Título de la sección */
+#sobre-mi h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #2d57e1; /* Verde como los editores de código */
+  text-shadow: 1px 1px 3px rgba(14, 113, 220, 0.5);
+}
+
+/* Contenedor de la información personal (perfil, descripción) */
+.about-container {
+  background-color: #333333; /* Fondo gris oscuro */
+  padding: 40px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  width: 80%;
+  max-width: 900px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-section#sobre-mi h1{
-  margin-bottom: 10px;
-}
-
-.about-container {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  text-align: left;
-  margin-top: 20px;
-}
-
+/* Imagen de perfil */
 .profile-photo {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid #1fd0d6; /* Borde verde */
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
   object-fit: cover;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease;
 }
 
-.profile-photo:hover {
-  transform: scale(1.05);
+/* Descripción de la persona */
+.about-container p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #f0f0f0;
+  margin-bottom: 30px;
+  max-width: 800px;
+  font-family: 'Courier New', Courier, monospace; /* Tipografía monoespaciada */
 }
 
+/* Sección de botones */
 .cv-section {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-top: 10px;
+  gap: 20px;
+  margin-top: 30px;
 }
 
+/* Botones de "Ver" y "Descargar" */
 .btn-cv {
-  padding: 10px 15px;
-  background-color: #000000;
+  background-color: #008080; /* Azul verdoso */
   color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+  padding: 12px 25px;
   font-size: 1rem;
-  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 2px solid #46dcc5; /* Borde verde */
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .btn-cv:hover {
-  background-color: #444444;
+  background-color: #34c734; /* Verde cuando pasa el mouse */
+  color: black;
+  transform: scale(1.1);
 }
 
+/* Sección del perfil de LinkedIn */
 .linkedin-profile {
-  display: block;
-  width: fit-content;
-  max-width: 850px;
-  margin: 40px auto;
-  padding: 50px;
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  margin-bottom: 20px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  transform: perspective(400px);
-}
-
-.linkedin-profile:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #444444; /* Fondo gris oscuro */
+  border-radius: 10px;
+  border: 2px solid #3706a9;
+  width: 80%;
+  max-width: 900px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .linkedin-profile h3 {
-  margin: 0 0 25px;
-  font-size: 1.4rem;
-  color: #333;
-}
-
-.linkedin-profile p {
-  margin: 5px 0;
-  color: #555;
-}
-
-.linkedin-profile a {
-  color: #0077b5;
-  text-decoration: none;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
   font-weight: bold;
-  margin-top: 20px;
-  display: inline-block;
-}
-
-.linkedin-profile a:hover {
-  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
 }
 
 .linkedin-logo {
-  width: 25px;
-  height: auto;
+  width: 30px;
   margin-right: 10px;
-  vertical-align: middle;
 }
 
+.linkedin-profile p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
 
-/* Ajustes responsivos */
+.linkedin-profile a {
+  color: #fcfcfc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.linkedin-profile a:hover {
+  color: #008080; /* Azul verdoso en el hover */
+}
+
+/* Responsividad */
 @media (max-width: 768px) {
-  section#sobre-mi {
-      padding: 15px;
+  #sobre-mi {
+    padding: 40px 20px;
   }
 
   .about-container {
-      flex-direction: column;
-      text-align: center;
+    width: 100%;
+    padding: 30px;
   }
 
   .profile-photo {
-      margin-bottom: 15px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .cv-section {
+    flex-direction: column;
+    gap: 15px;
   }
 }

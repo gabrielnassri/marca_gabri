@@ -1,23 +1,38 @@
 import React from "react";
-import AboutMe from "./components/AboutMe";
-import ContactForm from "./components/ContactForm";
-import FooterPage from "./components/FooterPage";
-import HeaderPage from "./components/HeaderPage";
-import PortfolioPage from "./components/PortfolioPage";
 import "./App.css";
 
-const App = () => {
-  return (
-    <div>
-      <h1>Bienvenido a mi página</h1>
-      <HeaderPage />
-      <AboutMe />
-      <ContactForm />
-      <FooterPage />
-      <PortfolioPage />
+// Importamos los componentes
+import HeaderPage from "./components/HeaderPage";
+import AboutMe from "./components/AboutMe";
+import PortfolioPage from "./components/PortfolioPage";
+import ContactForm from "./components/ContactForm";
+import FooterPage from "./components/FooterPage";
 
+function App() {
+  return (
+    <div className="app-container">
+      {/* Cabecera */}
+      <HeaderPage />
+
+      {/* Sección sobre mí */}
+      <section id="about">
+        <AboutMe />
+      </section>
+
+      {/* Sección de Proyectos / Portfolio */}
+      <section id="portfolio">
+        <PortfolioPage />
+      </section>
+
+      {/* Sección de contacto */}
+      <section id="contact">
+        <ContactForm />
+      </section>
+
+      {/* Pie de página */}
+      <FooterPage />
     </div>
   );
-};
+}
 
 export default App;

@@ -7,7 +7,7 @@ function AboutMe() {
 
   return (
     <section id="sobre-mi">
-      <h1>👨🏻‍💻 Sobre mí</h1>
+      <h1> Sobre mí</h1>
       <div className="about-container">
         <img
           src={image}
@@ -16,9 +16,14 @@ function AboutMe() {
         />
         <div>
           <p>
-            Hola, soy Gabriel Nassri. Soy desarrollador web con experiencia en el desarrollo de soluciones
-            frontend utilizando tecnologías como React, JavaScript y CSS. Me apasiona la creación de interfaces
+          Hola, soy Gabriel Nassri. Soy desarrollador web con experiencia en
+            el desarrollo de soluciones frontend utilizando tecnologías como
+            React, JavaScript y CSS. Me apasiona la creación de interfaces
             intuitivas y funcionales para mejorar la experiencia de los usuarios.
+
+            Además de la programación, me encanta jugar al tenis, viajar y ver
+            películas. Estos pasatiempos me ayudan a mantener un equilibrio
+            saludable entre mi vida personal y profesional.
           </p>
         </div>
       </div>

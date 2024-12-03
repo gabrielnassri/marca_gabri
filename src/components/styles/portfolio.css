@@ -1,0 +1,83 @@
+/* PortfolioPage.css */
+
+#portfolio {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  #portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Estilo de cada tarjeta */
+  .portfolio-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover de las tarjetas */
+  .portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Título de cada proyecto */
+  .portfolio-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Descripción de cada proyecto */
+  .portfolio-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Enlace al proyecto */
+  .portfolio-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover del enlace */
+  .portfolio-link:hover {
+    background-color: #0056b3;
+  }
+
+  @media (max-width: 768px) {
+    .portfolio-container {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .portfolio-card {
+      max-width: 100%;
+    }
+  }
+  
