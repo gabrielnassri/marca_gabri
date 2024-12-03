@@ -1,83 +1,121 @@
-/* PortfolioPage.css */
-
 #portfolio {
     padding: 50px 20px;
-    background-color: #f9f9f9;
+    background-color: #2e2e2e; /* Fondo oscuro */
     text-align: center;
-  }
-  
-  #portfolio h2 {
+    color: #f0f0f0; /* Texto claro */
+}
+
+#portfolio h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .portfolio-container {
+    color: #1fd0d6; /* Azul verdoso */
+    text-shadow: 1px 1px 3px rgba(0, 255, 255, 0.5);
+}
+
+.portfolio-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-  }
-  
-  /* Estilo de cada tarjeta */
-  .portfolio-card {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
+}
+
+/* Estilo de cada tarjeta */
+.portfolio-card {
+    background-color: #333333; /* Fondo gris oscuro */
+    border: 1px solid #444444; /* Borde gris más oscuro */
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     max-width: 300px;
     width: 100%;
     padding: 20px;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  /* Hover de las tarjetas */
-  .portfolio-card:hover {
+}
+
+/* Hover de las tarjetas */
+.portfolio-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Título de cada proyecto */
-  .portfolio-card h3 {
+    box-shadow: 0 4px 12px rgba(0, 255, 0, 0.3); /* Sombra verde brillante */
+}
+
+/* Título de cada proyecto */
+.portfolio-card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #333;
-  }
-  
-  /* Descripción de cada proyecto */
-  .portfolio-card p {
+    color: #34c734; /* Verde brillante */
+}
+
+/* Descripción de cada proyecto */
+.portfolio-card p {
     font-size: 1rem;
     margin-bottom: 15px;
-    color: #666;
+    color: #cccccc; /* Texto en gris claro */
     line-height: 1.5;
-  }
-  
-  /* Enlace al proyecto */
-  .portfolio-link {
+}
+
+/* Enlace al proyecto */
+.portfolio-link {
     display: inline-block;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #1fd0d6; /* Azul verdoso */
+    color: #2e2e2e; /* Texto oscuro */
     padding: 10px 15px;
     border-radius: 4px;
     text-decoration: none;
     font-size: 0.9rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Hover del enlace */
-  .portfolio-link:hover {
-    background-color: #0056b3;
-  }
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
-  @media (max-width: 768px) {
+/* Hover del enlace */
+.portfolio-link:hover {
+    background-color: #34c734; /* Verde brillante */
+    transform: scale(1.1);
+}
+
+/* Sección de GitHub */
+.github-section {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: #1a1a2e; /* Fondo más oscuro */
+    border-radius: 8px;
+    color: #ffffff; /* Texto blanco */
+}
+
+.github-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #1fd0d6; /* Azul verdoso */
+}
+
+.github-section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #cccccc; /* Texto gris claro */
+}
+
+.github-link {
+    display: inline-block;
+    background-color: #34c734; /* Verde brillante */
+    color: #2e2e2e; /* Texto oscuro */
+    padding: 12px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.github-link:hover {
+    background-color: #1fd0d6; /* Azul verdoso */
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
     .portfolio-container {
-      flex-direction: column;
-      gap: 15px;
+        flex-direction: column;
+        gap: 15px;
     }
-  
+
     .portfolio-card {
-      max-width: 100%;
+        max-width: 100%;
     }
-  }
-  
+}

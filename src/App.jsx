@@ -14,7 +14,8 @@ function App() {
     <div className="app-container">
       {/* Cabecera */}
       <HeaderPage />
-
+      
+      <main>
       {/* Sección sobre mí */}
       <section id="about">
         <AboutMe />
@@ -33,6 +34,8 @@ function App() {
       <section id="contact">
         <ContactForm />
       </section>
+
+      </main>
 
       {/* Pie de página */}
       <FooterPage />

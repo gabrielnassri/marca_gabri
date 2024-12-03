@@ -2,12 +2,12 @@
 
 /* Estilo principal del footer */
 footer {
-  background-color: #282c34;
-  color: #ffffff;
+  background-color: #2e2e2e; /* Fondo oscuro */
+  color: #f0f0f0; /* Texto en gris claro */
   padding: 20px 0;
   text-align: center;
   font-size: 0.9rem;
-  border-top: 2px solid #444;
+  border-top: 2px solid #1fd0d6; /* Línea superior verde */
 }
 
 /* Estilo para el contenedor de contenido del footer */
@@ -18,14 +18,14 @@ footer .footer-content {
 
 /* Estilo para los enlaces del footer */
 footer a {
-  color: #61dafb;
+  color: #2d57e1; /* Azul como los editores de código */
   text-decoration: none;
   margin: 0 10px;
   transition: color 0.3s ease;
 }
 
 footer a:hover {
-  color: #ffffff;
+  color: #1fd0d6; /* Verde en hover */
 }
 
 /* Estilo para los iconos sociales */
@@ -38,15 +38,24 @@ footer .social-icons img {
   height: 24px;
   margin: 0 5px;
   transition: transform 0.3s ease;
+  filter: brightness(0) invert(1); /* Blanco */
 }
 
 footer .social-icons img:hover {
   transform: scale(1.2);
+  filter: brightness(0) invert(0.7); /* Verde suave al hover */
 }
 
 /* Texto adicional */
 footer p {
   margin: 10px 0 0;
   font-size: 0.8rem;
-  color: #aaaaaa;
+  color: #cccccc; /* Gris claro */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  footer .footer-content {
+    padding: 0 10px;
+  }
 }

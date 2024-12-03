@@ -1,17 +1,17 @@
-/* Skills.css */
-
 /* Contenedor principal */
 #skills {
     padding: 50px 20px;
-    background-color: #f0f8ff;
+    background-color: #2e2e2e; /* Fondo oscuro */
     text-align: center;
+    color: #f0f0f0; /* Texto claro */
   }
   
   /* Título de la sección */
   #skills h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #333;
+    color: #1fd0d6; /* Azul verdoso */
+    text-shadow: 1px 1px 3px rgba(0, 255, 255, 0.5);
   }
   
   /* Contenedor de las categorías de habilidades */
@@ -24,21 +24,28 @@
   
   /* Categoría de habilidades */
   .skills-category {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
+    background-color: #333333; /* Fondo gris oscuro */
+    border: 1px solid #444444; /* Borde gris más oscuro */
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     max-width: 300px;
     width: 100%;
     padding: 20px;
     text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover para la categoría de habilidades */
+  .skills-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 255, 0, 0.3); /* Sombra verde brillante */
   }
   
   /* Título de cada categoría */
   .skills-category h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #007bff;
+    color: #34c734; /* Verde brillante */
   }
   
   /* Lista de habilidades */
@@ -50,7 +57,19 @@
   .skills-category ul li {
     font-size: 1rem;
     margin: 5px 0;
-    color: #666;
+    color: #cccccc; /* Texto en gris claro */
     line-height: 1.5;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .skills-container {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .skills-category {
+      max-width: 100%;
+    }
   }
   
