@@ -31,7 +31,7 @@ Este es un proyecto de desarrollo frontend para crear una **marca personal** que
 
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/gabrielnassri/portfolio.git
+   git clone https://github.com/gabrielnassri/marca_gabri.git
    Instala las dependencias:
    ```
    ```bash
@@ -56,8 +56,7 @@ npm install gh-pages --save-dev
 Configura el script de despliegue en el archivo package.json:
 
 json
-Copiar código
-"homepage": "https://tu-usuario.github.io/tu-repositorio",
+"homepage": "https://gabrielnassri.github.io/marca_gabri/",
 "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
