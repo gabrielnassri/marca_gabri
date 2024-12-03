@@ -5,7 +5,7 @@ function HeaderPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
-    setIsMenuOpen(!isMenuOpen); // Cambia el estado del menú cuando se hace clic
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -16,13 +16,7 @@ function HeaderPage() {
       <nav className={`nav-links ${isMenuOpen ? "active" : ""}`}>
         <ul>
           <li>
-            <a href="#sobre-mi">Sobre mí</a>
-          </li>
-          <li>
-            <a href="#portfolio">Portfolio</a>
-          </li>
-          <li>
-            <a href="#contacta-conmigo">Contacto</a>
+            <a href="#contacta-conmigo">  Contacta Conmigo </a>
           </li>
         </ul>
       </nav>

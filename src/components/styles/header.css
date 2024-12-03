@@ -1,73 +1,92 @@
-
-
+/* Estilos generales para el encabezado */
 #header {
+    background-color: #2e2e2e; /* Fondo oscuro */
+    color: #f0f0f0; /* Texto en gris claro */
+    padding: 20px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    padding: 20px 30px;
-    color: white;
+    font-family: 'Courier New', Courier, monospace; /* Tipografía monoespaciada */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
   
   #header .logo h1 {
-    font-size: 1.8em;
+    font-size: 2rem;
     margin: 0;
+    color: #2d57e1; /* Azul verdoso similar al 'Sobre mí' */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 5px rgba(14, 113, 220, 0.5); /* Sombra de texto */
   }
   
+  /* Estilos de la navegación */
   .nav-links {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     gap: 20px;
   }
   
   .nav-links ul {
+    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
   }
   
   .nav-links li {
-    margin: 0;
+    font-size: 1.2rem;
   }
   
   .nav-links a {
-    color: white;
+    color: #f0f0f0; /* Texto gris claro */
     text-decoration: none;
-    font-size: 1.1em;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s, transform 0.3s;
   }
   
   .nav-links a:hover {
-    background-color: #555;
-    border-radius: 5px;
+    color: #34c734; /* Verde cuando pasa el mouse */
+    transform: scale(1.1);
   }
   
-  /* Estilos para el menú en pantallas pequeñas (responsivo) */
+  /* Estilo para el menú móvil */
   .menu-toggle {
     display: none;
-    cursor: pointer;
     flex-direction: column;
+    cursor: pointer;
     gap: 5px;
   }
   
   .menu-toggle .bar {
     width: 30px;
-    height: 3px;
-    background-color: white;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    height: 4px;
+    background-color: #f0f0f0; /* Blanco para las barras */
+    transition: transform 0.3s, opacity 0.3s;
   }
   
+  .menu-toggle .bar.change:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .menu-toggle .bar.change:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle .bar.change:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  /* Estilo cuando el menú está abierto */
   .nav-links.active {
     display: block;
     position: absolute;
-    top: 70px; /* Coloca el menú debajo del header */
+    top: 80px;
     left: 0;
     width: 100%;
-    background-color: #333;
-    padding: 20px;
-    box-sizing: border-box;
+    background-color: #2e2e2e; /* Fondo oscuro para el menú */
+    padding: 20px 0;
   }
   
   .nav-links.active ul {
@@ -75,12 +94,21 @@
     align-items: center;
   }
   
-  .nav-links.active a {
-    font-size: 1.5em;
-    margin: 10px 0;
+  .nav-links.active li {
+    margin-bottom: 20px;
   }
   
-  /* Media query para pantallas pequeñas */
+  .nav-links.active a {
+    font-size: 1.5rem;
+    color: #f0f0f0;
+    text-decoration: none;
+  }
+  
+  .nav-links.active a:hover {
+    color: #34c734; /* Verde cuando pasa el mouse */
+  }
+  
+  /* Responsividad */
   @media (max-width: 768px) {
     .nav-links {
       display: none;
