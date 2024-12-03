@@ -17,8 +17,8 @@ Este es un proyecto de desarrollo frontend para crear una **marca personal** que
 ## Enlaces
 
 - **Código fuente en GitHub**: [GitHub Repository](https://github.com/gabrielnassri/marca_gabri)
-- **Página web publicada**: [GitHub Pages]("https://gabrielnassri.github.io/marca_gabri/")
-- **Perfil de LinkedIn**: [LinkedIn]((https://www.linkedin.com/in/gabriel-nassri-a27416280/))
+- **Página web publicada**: [GitHub Pages](https://gabrielnassri.github.io/marca_gabri/)
+- **Perfil de LinkedIn**: [LinkedIn](https://www.linkedin.com/in/gabriel-nassri-a27416280/)
 
 ## Características
 - **Página de inicio** con enlaces de navegación hacia las secciones de Portfolio, Habilidades y Contacto.
