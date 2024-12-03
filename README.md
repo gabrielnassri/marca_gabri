@@ -30,6 +30,47 @@ Este es un proyecto de desarrollo frontend para crear una **marca personal** que
 ## Instalación
 
 1. Clonar el repositorio:
-
    ```bash
    git clone https://github.com/gabrielnassri/portfolio.git
+   Instala las dependencias:
+   ```
+```bash
+npm install
+Ejecuta la aplicación:
+```
+
+```bash
+npm start
+Accede a la aplicación en tu navegador en http://localhost:3000.
+```
+🛠 Configuración de EmailJS
+Regístrate en EmailJS y crea un nuevo servicio y plantilla.
+Configura las claves serviceID y templateID en el archivo ContactForm.jsx.
+🌐 Despliegue
+El proyecto está alojado en GitHub Pages. Para desplegar:
+
+Instala gh-pages:
+
+``` bash
+npm install gh-pages --save-dev
+Configura el script de despliegue en el archivo package.json:
+
+json
+Copiar código
+"homepage": "https://tu-usuario.github.io/tu-repositorio",
+"scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+}
+Despliega la aplicación:
+```
+```bash
+npm run deploy
+```
+
+📌 Próximas mejoras
+Añadir animaciones más dinámicas.
+Mejorar la accesibilidad (WCAG).
+Agregar un sistema de blog.
+👨‍💻 Autor
+Creado con 💻  por Gabriel Nassri.
